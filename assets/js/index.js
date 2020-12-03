@@ -34,7 +34,6 @@ function renderUserInfo(data) {
         $('.layui-nav-img').attr('src', data.user_pic).show();
         $('.initial-head').hide();
     }
-
 }
 
 //退出
@@ -44,4 +43,11 @@ $('.exit').on('click', function() {
         location.href = 'login.html';
         layer.close(index);
     });
+})
+
+//头部右侧打开个人信息页面,左侧导航项跟随选中
+$('.user-info-rig a').on('click', function(e) {
+    var index = $(e.target).parent().index();
+    $('.layui-nav-tree .layui-this').removeClass('layui-this')
+    $('.user-info-left dd').eq(index).addClass('layui-this');
 })

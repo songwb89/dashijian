@@ -12,7 +12,7 @@ $.ajaxPrefilter(function(options) {
         //这里必须加上'身份认证失败',不能只判断status状态, 否则会影响到登录功能.
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             localStorage.removeItem('token');
-            location.href = '/login.html';
+            window.parent.location.href = '/login.html';
         }
     }
 });

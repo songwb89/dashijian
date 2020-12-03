@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>大事件-后台首页</title>
     <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/fonts/iconfont.css">
@@ -24,10 +24,10 @@
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                         <span class="initial-head">S</span> 个人中心
                     </a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">基本资料</a></dd>
-                        <dd><a href="javascript:;">更换头像</a></dd>
-                        <dd><a href="javascript:;">重置密码</a></dd>
+                    <dl class="layui-nav-child user-info-rig">
+                        <dd> <a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd> <a href="/user/user_via.html" target="fm">更换头像</a></dd>
+                        <dd> <a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item exit">
@@ -72,16 +72,18 @@
                     <li class="layui-nav-item">
                         <span class="iconfont icon-user"></span>
                         <a href="javascript:;">个人中心</a>
-                        <dl class="layui-nav-child">
+                        <dl class="layui-nav-child user-info-left">
                             <dd>
                                 <i class="layui-icon layui-icon-app"></i>
-                                <a href="javascript:;">基本资料</a></dd>
+                                <a href="/user/user_info.html" target="fm">基本资料</a>
+                            </dd>
                             <dd>
                                 <i class="layui-icon layui-icon-app"></i>
-                                <a href="javascript:;">更换头像</a></dd>
+                                <a href="/user/user_via.html" target="fm">更换头像</a>
+                            </dd>
                             <dd>
                                 <i class="layui-icon layui-icon-app"></i>
-                                <a href="javascript:;">重置密码</a>
+                                <a href="/user/user_pwd.html" target="fm">重置密码</a>
                             </dd>
                         </dl>
                     </li>
