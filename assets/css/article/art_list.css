@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #F2F3F5;
+}
+
+.layui-form-item {
+    display: inline-block;
+}
+
+.layui-input-block {
+    margin-left: 0 !important;
+}
+
+.filter-btn {
+    margin-top: -2px;
+}
